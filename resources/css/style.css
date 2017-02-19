@@ -1,0 +1,239 @@
+/*media*/
+
+
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/*top banner w moto picture */
+header {
+  background-color: black;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+}
+.header {
+  display: flex;
+  flex-shrink: 3;
+  align-items: center;
+  margin: 10px auto;
+}
+.header img {
+  padding: 0.5rem;
+  height: 1.5rem;
+  padding-left: 8rem;
+
+}
+.header h3 {
+  padding: 0.66rem 0.5rem;
+  font-size: 1rem;
+}
+.main-container {
+  width: 960px;
+  margin: 0 auto;
+  border: thin solid white;
+  display: flex;
+  flex-flow: column wrap;
+  flex-shrink: 3;
+}
+.top {
+  background-image: url("/Users/MSC/projects_local/secretagentsupply/resources/moto.jpeg");
+  background-position: center;
+
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 470px;){
+  .top {
+    height: 15rem;
+  }
+}
+.heading-box {
+  background-color: black;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+
+}
+.heading-box h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.heading-box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0.25rem;
+}
+
+/*nav bar*/
+nav {
+
+}
+nav ul.full {
+  height: 2rem;
+  width: auto;
+  background-color: firebrick;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: thin solid white;
+}
+nav ul.media {
+  display: none;
+  height: 2rem;
+  width: auto;
+  background-color: firebrick;
+  justify-content: space-around;
+  align-items: center;
+  border: thin solid white;
+}
+@media only screen and (max-width: 1024px){
+  nav ul.media {
+    display: flex;
+  }
+  nav ul.full {
+    display: none;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+
+
+/*merch*/
+.bottom {
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  width: auto;
+  padding-bottom: 4rem;
+}
+
+.bottom1{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.item-pen,
+.item-watch,
+.item-glasses {
+  width: 30%;
+  margin: 3rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px){
+  .item-pen,
+  .item-watch {
+    width: 47%;}
+  .item-glasses {
+    display: none;
+  }
+}
+.img {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 4px solid black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+
+img {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 8rem;
+  margin: 0;
+}
+
+.item-pen span,
+.item-watch span,
+.item-glasses span {
+  background-color: black;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+}
+
+/*info*/
+.bottom2 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+
+}
+
+.location,
+.hours {
+  width: 35%;
+}
+
+.location h3,
+.hours h3 {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.location span,
+.hours span {
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 470px;){
+  .top {
+    height: 15rem;
+  }
+  .heading-box {
+    margin-top: 10rem;
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .location,
+  .hours {
+    width: 90%;
+  }
+  footer {
+    justify-content: center;
+  }
+}
+
+
+/*foot*/
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  background-color: black;
+}
